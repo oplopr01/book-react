@@ -1,0 +1,11 @@
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+  margin-top: 20px;
+}
+
+/* Add additional styling here for the Navbar, LanguageBar, Accordion, etc. */

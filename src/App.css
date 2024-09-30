@@ -1,0 +1,123 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-buttons button {
+    margin: 0 5px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #4a90e2;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-buttons button:hover {
+    background-color: #e5e5e5;
+  }
+  
+  .language-switcher {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .language-switcher button {
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .language-switcher button:hover {
+    background-color: #357abd;
+  }
+  
+  .main-container {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .accordion {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+  }
+  
+  .accordion h3 {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion h3:hover {
+    background-color: #357abd;
+  }
+  
+  .accordion ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+  }
+  
+  .accordion li {
+    padding: 8px;
+    background-color: #f1f1f1;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion li:hover {
+    background-color: #dcdcdc;
+  }
+  
+  .content-area {
+    width: 70%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-area h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .content-area p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  

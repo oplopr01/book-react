@@ -1,0 +1,22 @@
+.language-bar {
+    margin: 10px 0;
+  }
+  
+  .language-bar button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .language-bar button.active {
+    background-color: #0056b3;
+  }
+  
+  .language-bar button:hover {
+    background-color: #0056b3;
+  }
+  

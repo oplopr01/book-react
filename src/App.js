@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Accordion from './componentsV2/Accordion';
 import ContentArea from './componentsV2/ContentArea';
 import Navbar from './componentsV2/Navbar';
@@ -7,8 +7,8 @@ import './App.css';
 
 const App = () => {
   const [selectedContent, setSelectedContent] = useState('');
-  const [language, setLanguage] = useState('Telugu');
-
+  const [selectedSectionId, setSelectedSectionId] = useState(null);  // Track selected section ID
+  const [language, setLanguage] = useState('English');
   const contentByLanguage = {
     English: {
       chapters: [
@@ -153,19 +153,36 @@ const App = () => {
   };
 
   const handleSectionClick = (sectionId) => {
+    setSelectedSectionId(sectionId);  // Store selected section ID
     // Find the content of the selected section based on the language
     const currentChapters = contentByLanguage[language]?.chapters || contentByLanguage['English'].chapters;
     
     for (let chapter of currentChapters) {
       const selectedSection = chapter.sections.find((section) => section.id === sectionId);
       if (selectedSection) {
-        setSelectedContent(selectedSection.content);
+        setSelectedContent(selectedSection.content);  // Set the content based on the language
         break;
       }
     }
   };
 
   const chapters = contentByLanguage[language]?.chapters || contentByLanguage['English'].chapters;
+
+  // useEffect to update content when language changes
+  useEffect(() => {
+    if (selectedSectionId) {
+      // Find the corresponding content in the new language for the selected section
+      const currentChapters = contentByLanguage[language]?.chapters || contentByLanguage['English'].chapters;
+      
+      for (let chapter of currentChapters) {
+        const section = chapter.sections.find((sec) => sec.id === selectedSectionId);
+        if (section) {
+          setSelectedContent(section.content);  // Update the content with the new language
+          break;
+        }
+      }
+    }
+  }, [language, selectedSectionId]);
 
   return (
     <div>

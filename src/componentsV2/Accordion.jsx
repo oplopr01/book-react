@@ -15,9 +15,10 @@ const Accordion = ({ chapters, onSectionClick }) => {
           {expandedChapter === index && (
             <ul>
               {chapter.sections.map(section => (
-                <li key={section.id} onClick={() => onSectionClick(section.content)}>
-                  {section.title}
-                </li>
+                <li key={section.id} onClick={() => onSectionClick(section.id)}>
+                {section.title}
+              </li>
+              
               ))}
             </ul>
           )}

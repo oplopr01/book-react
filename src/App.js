@@ -13,11 +13,16 @@ const App = () => {
     English: {
       chapters: [
         {
-          title: 'Chapter 1',
+          title: 'Chapter 1 Overview of Banking and Finance',
           sections: [
-            { id: '1.1', title: 'Section 1.1: Overview', content: 'Overview content in English' },
-            { id: '1.2', title: 'Section 1.2: Analysis', content: 'Analysis content in English' },
-            { id: '1.3', title: 'Section 1.3: Summary', content: 'Summary content in English' }
+            { id: '1.1', title: 'Section 1.1:	OBJECTIVE', content: 'In this lesson the reader will learn about banks, functions of banks, various type of banks, types of customers, etc. Among the customers, it is important to know about the borrowers from banks and NBFCs who will be met by collection functionaries during collection work.' },
+            { id: '1.2', title: 'Section 1.2:	INTRODUCTION ', content: `<p>People need banks and financial institutions to meet their savings, credit, investment, transactions and other financial needs. People would like to protect themselves against losses by talking insurance. Business persons would like to seek capital for business through credit from Banks. These requirements are met by banks, insurance companies, financial institutions, and others.
+            
+            
+            ` },
+            { id: '1.3', title: 'Section 1.3:	FEATURES OF BANKING', content: 'Summary content in English' },
+            { id: '1.3', title: 'Section 1.3: Summary', content: 'Summary content in English' },
+            { id: '1.3', title: 'Section 1.3: Summary', content: 'Summary content in English' },
           ]
         },
         {
